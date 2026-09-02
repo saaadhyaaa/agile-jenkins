@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build'){
             steps{
-                sh ''' printf "10\\n20\\n" | python sum.py '''
+                sh 'python sum.py'
             }
         }
     }
